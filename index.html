@@ -12,30 +12,45 @@
 			
 			.digit
 				{
-				border-style:solid;
-				border-width:1px;
-				border-radius:5px;
+				
 				background-color:#fc9c54;
 				vertical-align: middle;
 				text-align: center;
 				}
+			.o_dig, .digit
+				{
+				border-style:solid;
+				border-width:1px;
+				border-radius:5px;
+				}
+			
 			.digit:hover
 				{
 				background-color:#fdd0af;
 				}
-			.tablica  .digit, .tablica  .equ , .tablica .out_digita
+			.tablica  .digit, .tablica  .equ , .tablica .out_digita, .o_dig
 				{
 				width:40px;
-				height:40px;
+				
 				}
 			.equ
 				{
 				background-image:url(./pics/equal-sign.webp);
 				background-size:cover;
 				}
-			.out_digita
+			.shapka > td > div, .tablica  .digit, .tablica  .equ , .tablica .out_digita, .o_dig
 				{
-				resize:none;
+				height:40px;
+				}
+			.shapka > td > div
+				{
+				width:100%;
+				vertical-align: middle;
+				text-align: center;
+				}
+			.shapka > td >.naming
+				{
+				font-size:7pt;
 				}
 		</style>
 		<script>
@@ -81,11 +96,29 @@
 	</head>
 	<body onload="delo()">
 		<table class="tablica">
+			<tr class="shapka">
+				<td colspan='2'>
+					<div class="naming" >
+						Названия переменных
+					</div>
+				</td>
+				<td colspan='8'>
+					<div class="digiting">
+						 Двоичная система
+					</div>
+				</td>
+				<td>
+					<div class="deci_digit">
+						Десятичная система
+					</div>
+				</td>
+			</tr>
 			<tr>
 			<!--
 			///////////////////////////////////////////
 			dlya a
 			-->
+				
 				<td>
 					<div class="name_of_var">
 						a
@@ -144,8 +177,22 @@
 								</div>
 							</td>
 							<td>
-								<textarea class="a_digita  out_digita">
-								</textarea>
+								<table>
+									<tr>
+										<td>
+											<div class="o_dig" id="oa2">
+											</div>
+										</td>
+										<td>
+											<div class="o_dig" id="oa1">
+											</div>
+										</td>
+										<td>
+											<div class="o_dig" id="oa0">
+											</div>
+										</td>
+									</tr>
+								</table>
 							</td>
 						</tr>
 					</table>
@@ -214,8 +261,22 @@
 								</div>
 							</td>
 							<td>
-								<textarea class="b_digita out_digita">
-								</textarea>
+								<table>
+									<tr>
+										<td>
+											<div class="o_dig" id="ob2">
+											</div>
+										</td>
+										<td>
+											<div class="o_dig" id="ob1">
+											</div>
+										</td>
+										<td>
+											<div class="o_dig" id="ob0">
+											</div>
+										</td>
+									</tr>
+								</table>
 							</td>
 						</tr>
 					</table>
