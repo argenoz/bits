@@ -69,6 +69,7 @@
 						else
 							ta.innerText=ta.di = ewq[0n];
 						};
+				let pre=null;
 				while(i<l)
 					{
 					let ta = qwe[i];
@@ -76,8 +77,12 @@
 					ta.addEventListener('click',(e)=>{
 						(async(t)=>{f(t);})(e.target);
 						});
+					if(pre!=null)
+						pre.nexti = ta;
+					pre = ta;
 					i=i+ewq[1n];
 					}
+				
 					}
 					)();
 					(async()=>{
