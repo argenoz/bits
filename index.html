@@ -1,7 +1,231 @@
 <html>
 	<head>
+		<style>
+			head, body
+				{
+				position:absolute;
+				}
+			.tablica, .tablica digit 
+				{
+				user-select:none;
+				}
+			
+			.digit
+				{
+				border-style:solid;
+				border-width:1px;
+				border-radius:5px;
+				background-color:#fc9c54;
+				vertical-align: middle;
+				text-align: center;
+				}
+			.digit:hover
+				{
+				background-color:#fdd0af;
+				}
+			.tablica  .digit, .tablica  .equ , .tablica .out_digita
+				{
+				width:40px;
+				height:40px;
+				}
+			.equ
+				{
+				background-image:url(./pics/equal-sign.webp);
+				background-size:cover;
+				}
+			.out_digita
+				{
+				resize:none;
+				}
+		</style>
+		<script>
+			function delo()
+				{
+				let ewq = [0n,1n];
+				
+				
+				(async()=>{
+				let qwe = document.getElementsByClassName('digit');
+				let i=0n, l = BigInt(qwe.length);
+				let f = (ta)=>
+						{
+						if(ta.di==ewq[0n])
+							ta.innerText=ta.di = ewq[1n];
+						else
+							ta.innerText=ta.di = ewq[0n];
+						};
+				while(i<l)
+					{
+					let ta = qwe[i];
+					ta.innerText=ta.di = ewq[0n];
+					ta.addEventListener('click',(e)=>{
+						(async(t)=>{f(t);})(e.target);
+						});
+					i=i+ewq[1n];
+					}
+					}
+					)();
+					(async()=>{
+					let qwe = document.getElementsByClassName('out_digita');
+					let i = 0n;
+					let l = qwe.length;
+					while(i<l)
+						{
+						let ta = qwe[i];
+						ta.value=0n;
+						i=i+ewq[1n];
+						}
+					})();
+				}
+		</script>
 	</head>
-	<body>
-		qwe
+	<body onload="delo()">
+		<table class="tablica">
+			<tr>
+			<!--
+			///////////////////////////////////////////
+			dlya a
+			-->
+				<td>
+					<div class="name_of_var">
+						a
+					</div>
+				</td>
+				<td>
+					<div class="eqqu">
+						=
+					</div>
+				</td>
+				<td >
+					<div class="digit a_digit">
+						<!-- -->qwe
+					</div>
+				</td>
+				<td >
+					<div class="digit a_digit">
+						<!-- -->
+					</div>
+				</td>
+				<td >
+					<div class="digit a_digit">
+						<!-- -->
+					</div>
+				</td>
+				<td >
+					<div class="digit a_digit">
+						<!-- -->
+					</div>
+				</td>
+				<td >
+					<div class="digit a_digit">
+						<!-- -->
+					</div>
+				</td>
+				<td >
+					<div class="digit a_digit">
+						<!-- -->
+					</div>
+				</td>
+				<td >
+					<div class="digit a_digit">
+						<!-- -->
+					</div>
+				</td>
+				<td >
+					<div class="digit a_digit">
+						<!-- -->
+					</div>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td>
+								<div class='equ'>
+								</div>
+							</td>
+							<td>
+								<textarea class="a_digita  out_digita">
+								</textarea>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+			<!--
+			///////////////////////////////////////////
+			dlya b
+			-->
+				<td>
+					<div class="name_of_var">
+						b
+					</div>
+				</td>
+				<td>
+					<div class="eqqu">
+						=
+					</div>
+				</td>
+				<td >
+					<div class="digit b_digit">
+						<!-- -->qwe
+					</div>
+				</td>
+				<td >
+					<div class="digit b_digit">
+						<!-- -->
+					</div>
+				</td>
+				<td >
+					<div class="digit b_digit">
+						<!-- -->
+					</div>
+				</td>
+				<td >
+					<div class="digit b_digit">
+						<!-- -->
+					</div>
+				</td>
+				<td >
+					<div class="digit b_digit">
+						<!-- -->
+					</div>
+				</td>
+				<td >
+					<div class="digit b_digit">
+						<!-- -->
+					</div>
+				</td>
+				<td >
+					<div class="digit b_digit">
+						<!-- -->
+					</div>
+				</td>
+				<td >
+					<div class="digit b_digit">
+						<!-- -->
+					</div>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td>
+								<div class='equ'>
+								</div>
+							</td>
+							<td>
+								<textarea class="b_digita out_digita">
+								</textarea>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<br/>
+		
+		<br/>
+		<hr/>
+		
 	</body>
 </html>
