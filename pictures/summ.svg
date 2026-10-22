@@ -100,14 +100,14 @@
     <polygon style="fill: #000000" points="184.332,321.103 194.338,316.116 191.832,321.113 194.326,326.116 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="184.332,321.103 194.338,316.116 191.832,321.113 194.326,326.116 "/>
   </g>
-  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="300.519" y="476.788">
-    <tspan x="300.519" y="476.788"></tspan>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="300.52" y="476.788">
+    <tspan x="300.52" y="476.788"></tspan>
   </text>
   <g>
-    <polygon style="fill: #ffffff" points="62.8078,554.192 160.881,554.192 146.323,594.192 48.249,594.192 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="62.8078,554.192 160.881,554.192 146.323,594.192 48.249,594.192 "/>
+    <polygon style="fill: #ffffff" points="62.3578,554.192 161.331,554.192 146.773,594.192 47.799,594.192 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="62.3578,554.192 161.331,554.192 146.773,594.192 47.799,594.192 "/>
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="104.565" y="578.092">
-      <tspan x="104.565" y="578.092">Вывести C</tspan>
+      <tspan x="104.565" y="578.092">Вывести D</tspan>
     </text>
   </g>
   <g>
