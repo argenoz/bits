@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="21cm" height="34cm" viewBox="-14 17 405 672" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <polygon style="fill: #ffffff" points="41.8926,119 172.666,119 158.107,159 27.3338,159 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="41.8926,119 172.666,119 158.107,159 27.3338,159 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="100" y="142.9">
+      <tspan x="100" y="142.9">Ввести число A</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="42.8676,220 173.691,220 159.132,260 28.3088,260 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="42.8676,220 173.691,220 159.132,260 28.3088,260 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="101" y="243.9">
+      <tspan x="101" y="243.9">Ввести число B</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="108" cy="41.7603" rx="70.076" ry="23.2397"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="108" cy="41.7603" rx="70.076" ry="23.2397"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="108" y="45.6603">
+      <tspan x="108" y="45.6603">Начало</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="108" y1="65" x2="107.409" y2="109.265"/>
+    <polygon style="fill: #000000" points="107.309,116.764 102.443,106.698 107.409,109.265 112.442,106.832 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="107.309,116.764 102.443,106.698 107.409,109.265 112.442,106.832 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="100.207" y1="159.959" x2="100.696" y2="209.305"/>
+    <polygon style="fill: #000000" points="100.77,216.805 95.6715,206.855 100.696,209.305 105.671,206.756 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="100.77,216.805 95.6715,206.855 100.696,209.305 105.671,206.756 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-12.725" y="379" width="229.45" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-12.725" y="379" width="229.45" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="102" y="401.9">
+      <tspan x="102" y="401.9">C:= (A "И" B) сдвиг влево на 1;</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="18.9" y="302" width="162.2" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="18.9" y="302" width="162.2" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="100" y="324.9">
+      <tspan x="100" y="324.9">D:= A "ИСК ИЛИ" B;</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="100.741" y1="260.982" x2="100.367" y2="291.292"/>
+    <polygon style="fill: #000000" points="100.274,298.791 95.398,288.73 100.367,291.292 105.397,288.853 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="100.274,298.791 95.398,288.73 100.367,291.292 105.397,288.853 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="100.518" y1="340.927" x2="101.23" y2="368.34"/>
+    <polygon style="fill: #000000" points="101.424,375.838 96.1664,365.971 101.23,368.34 106.163,365.711 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="101.424,375.838 96.1664,365.971 101.23,368.34 106.163,365.711 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="105.4,443.294 172.813,477.001 105.4,510.707 37.9868,477.001 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="105.4,443.294 172.813,477.001 105.4,510.707 37.9868,477.001 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="105.4" y="480.901">
+      <tspan x="105.4" y="480.901">C = 0?</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="102.86" y1="417.991" x2="103.52" y2="433.309"/>
+    <polygon style="fill: #000000" points="103.842,440.802 98.4167,431.026 103.52,433.309 108.407,430.596 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="103.842,440.802 98.4167,431.026 103.52,433.309 108.407,430.596 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="211.644" y="457.788" width="177.75" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="211.644" y="457.788" width="177.75" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="300.519" y="480.688">
+      <tspan x="300.519" y="480.688">A:= C</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="272.864" y="302.212" width="55.7" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="272.864" y="302.212" width="55.7" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="300.714" y="325.112">
+      <tspan x="300.714" y="325.112">B:=D</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="173.813" y1="476.926" x2="200.917" y2="476.897"/>
+    <polygon style="fill: #000000" points="208.417,476.888 198.422,481.899 200.917,476.897 198.411,471.899 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="208.417,476.888 198.422,481.899 200.917,476.897 198.411,471.899 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="176.185" y="466.998">
+    <tspan x="176.185" y="466.998">НЕТ</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="300.544" y1="456.79" x2="300.677" y2="350.946"/>
+    <polygon style="fill: #000000" points="300.686,343.446 305.674,353.452 300.677,350.946 295.674,353.44 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="300.686,343.446 305.674,353.452 300.677,350.946 295.674,353.44 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="272.864" y1="321.212" x2="191.832" y2="321.113"/>
+    <polygon style="fill: #000000" points="184.332,321.103 194.338,316.116 191.832,321.113 194.326,326.116 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="184.332,321.103 194.338,316.116 191.832,321.113 194.326,326.116 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="300.519" y="476.788">
+    <tspan x="300.519" y="476.788"></tspan>
+  </text>
+  <g>
+    <polygon style="fill: #ffffff" points="62.8078,554.192 160.881,554.192 146.323,594.192 48.249,594.192 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="62.8078,554.192 160.881,554.192 146.323,594.192 48.249,594.192 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="104.565" y="578.092">
+      <tspan x="104.565" y="578.092">Вывести C</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="104.845" cy="667.219" rx="42.5384" ry="21.2692"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="104.845" cy="667.219" rx="42.5384" ry="21.2692"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="104.845" y="671.119">
+      <tspan x="104.845" y="671.119">Конец</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="105.103" y1="511.561" x2="104.829" y2="543.451"/>
+    <polygon style="fill: #000000" points="104.765,550.95 99.8509,540.908 104.829,543.451 109.851,540.994 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="104.765,550.95 99.8509,540.908 104.829,543.451 109.851,540.994 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="104.628" y1="595.189" x2="104.749" y2="635.214"/>
+    <polygon style="fill: #000000" points="104.771,642.714 99.7413,632.729 104.749,635.214 109.741,632.699 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="104.771,642.714 99.7413,632.729 104.749,635.214 109.741,632.699 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="113" y="533">
+    <tspan x="113" y="533">ДА</tspan>
+  </text>
+</svg>
