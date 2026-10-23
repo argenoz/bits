@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<meta charset="utf-8" />
 		<style>
 			head, body
 				{
@@ -52,13 +53,105 @@
 				{
 				font-size:7pt;
 				}
+			#reschet
+				{
+				position:relative;
+				background-color:#861200;
+				height:160px;
+				width:200px;
+				border-radius:10px;
+				vertical-align: middle;
+				text-align: center;
+				}
+			#reschet:hover
+				{
+				background-color:#a60200;
+				}
+			#vyvodnoi
+				{
+				display:flex;
+				flex-direction:column;
+				user-select:none;
+				}
+			table.tripla 
+				{
+				border-style:solid;
+				border-width:3px;
+				}
 		</style>
 		<script>
+			let GGG = 0;
+			let flg = false;
 			function delo()
 				{
 				let ewq = [0n,1n];
-				
-				
+				let makeTriple = (S)=>
+					{
+					let d=10n,table = document.createElement('table'),l=[];
+					table.setAttribute('class',"tripla");
+					let tr = document.createElement('tr');
+					let td = 0,di;
+					table.appendChild(tr);
+					td = document.createElement('td');
+					di = document.createElement('div');
+					td.appendChild(di);
+					td.setAttribute('colspan','3');
+					di.innerText="deci";
+					tr.appendChild(td);
+					tr = document.createElement('tr');
+					table.appendChild(tr);
+					
+					td = document.createElement('td');
+					di = document.createElement('div');
+					di.innerText = S%d;
+					S = S/d;
+					td.appendChild(di);
+					l.push(td);
+					td = document.createElement('td');
+					di = document.createElement('div');
+					di.innerText = S%d;
+					S = S/d;
+					td.appendChild(di);
+					l.push(td);
+					td = document.createElement('td');
+					di = document.createElement('div');
+					di.innerText = S%d;
+					td.appendChild(di);
+					l.push(td);
+					tr.appendChild(l[2n]);
+					tr.appendChild(l[1n]);
+					tr.appendChild(l[0n]);
+					return table;
+					};
+				let makeTable = ()=>{
+						let tablica = document.createElement('table');
+						let ro = document.createElement('tr');
+						tablica.appendChild(ro);
+						let i = 0n;
+						let tagi=[];
+						while(i<9n)
+							{
+							let dd = document.createElement('td');
+							let ddd = document.createElement('div');
+							tagi.push(ddd);
+							dd.appendChild(ddd);
+							ro.appendChild(dd);
+							i=i+1n;
+							}
+						let sign = (e)=>{
+							let td = document.createElement('td');
+							let tr = document.createElement('tr');
+							let di = document.createElement('div');
+							tr.appendChild(td);
+							td.setAttribute('colspan','9');
+							td.appendChild(di);
+							di.innerText=e;
+							tablica.insertBefore(tr,tablica.childNodes[0]);
+							};
+						return {the_tag:tablica,tags:tagi,si:sign};
+						};
+				let spisok=[];
+				let o_S=0n,o_mn=1n;
 				(async()=>{
 				let qwe = document.getElementsByClassName('digit');
 				let i=0n, l = BigInt(qwe.length);
@@ -98,6 +191,194 @@
 						i=i+ewq[1n];
 						}
 					})();
+								(async ()=>{
+				GGG = new XMLHttpRequest();
+								GGG.onload=(e)=>
+								{
+					let importy = {
+									env:
+									{
+			inputA:()=>{
+				let q = document.getElementsByClassName('digit')[0n];
+				let S = 0n , d=10n;
+				let mn = 1n;
+				while(q!=null)
+					{
+					if(q.innerText==1n){
+							GGG.ex.setA1();
+							S = S + mn;
+								}
+					else
+							GGG.ex.setA0();
+					q = q.nexti;
+					mn = mn*2n;
+					}
+				document.getElementById('oa0').innerText=(S%d);
+				S = S/d;
+				document.getElementById('oa1').innerText=(S%d);
+				S = S/d;
+				document.getElementById('oa2').innerText=(S%d);
+
+				
+				},
+			inputB:()=>{
+				let mn=1n, S=0n,d=10n;
+				let q = document.getElementsByClassName('digit')[8n];
+				while(q!=null)
+					{
+					if(q.innerText==1n){
+							GGG.ex.setB1();
+							S = S + mn;
+								}
+					else
+							GGG.ex.setB0();
+					q = q.nexti;
+					mn = mn*2n;
+					}
+				document.getElementById('ob0').innerText=(S%d);
+				S = S/d;
+				document.getElementById('ob1').innerText=(S%d);
+				S = S/d;
+				document.getElementById('ob2').innerText=(S%d);
+				
+				},
+			prepair:()=>
+			{
+			let l = spisok.l = [];
+			o_mn = 1n;
+			o_S = 0n;
+			},
+			output1:()=>{spisok.l = [1n]+spisok.l; },
+			output0:()=>{spisok.l = [0n]+spisok.l;},
+			//output1:()=>{spisok.l = spisok.l.push(1n);},
+			//output0:()=>{spisok.l = spisok.l.push(0n);},
+			set_summ:()=>
+				{
+				let na = 'osumm';
+				let tbl = makeTable();
+				let li = tbl.tags;
+				let i = 0n;
+				let lis = spisok.l;
+				let S = 0n, mn = 1n;
+				while(i<8n)
+		      			{
+					let tmp = lis[i];
+		      			li[i].innerText=tmp;
+					if(0n!=tmp)
+						S = S + mn;
+					mn = mn*2n;
+		      			i=i+1n;
+		      			}
+		      		document.getElementById(na).innerHTML="";
+		      		tbl.si('summ:');
+				li[8n].parentElement.appendChild(makeTriple(S));
+				document.getElementById(na).appendChild(tbl.the_tag);
+				},
+			set_diff:()=>
+				{
+				let na = 'odiff';
+				let tbl = makeTable();
+				let li = tbl.tags;
+				let i = 0n;
+				let lis = spisok.l;
+				let S = 0n, mn = 1n;
+				while(i<8n)
+		      			{
+					let tmp = lis[i];
+		      			li[i].innerText=tmp;
+					if(0n!=tmp)
+						S = S + mn;
+					mn = mn*2n;
+		      			i=i+1n;
+		      			}
+		      		document.getElementById(na).innerHTML="";
+		      		tbl.si('diff:');
+				li[8n].parentElement.appendChild(makeTriple(S));
+				document.getElementById(na).appendChild(tbl.the_tag);
+				},
+			set_neg:()=>
+				{
+				let na = 'oneg';
+				let tbl = makeTable();
+				let li = tbl.tags;
+				let i = 0n;
+				let lis = spisok.l;
+				let S = 0n, mn = 1n;
+				while(i<8n)
+		      			{
+					let tmp = lis[i];
+		      			li[i].innerText=tmp;
+					if(0n!=tmp)
+						S = S + mn;
+					mn = mn*2n;
+		      			i=i+1n;
+		      			}
+				document.getElementById(na).innerHTML="";
+		      		tbl.si('negative -a:');
+				li[8n].parentElement.appendChild(makeTriple(S));
+				document.getElementById(na).appendChild(tbl.the_tag);
+				},
+			set_inv:()=>
+				{
+				let na = 'oinv';
+				let tbl = makeTable();
+				let li = tbl.tags;
+				let i = 0n;
+				let lis = spisok.l;
+				let S = 0n, mn = 1n;
+				while(i<8n)
+		      			{
+					let tmp = lis[i];
+		      			li[i].innerText=tmp;
+					if(0n!=tmp)
+						S = S + mn;
+					mn = mn*2n;
+		      			i=i+1n;
+		      			}
+				document.getElementById(na).innerHTML="";
+		      		tbl.si('bitwise revert a:');
+				li[8n].parentElement.appendChild(makeTriple(S));
+				document.getElementById(na).appendChild(tbl.the_tag);
+				}
+			
+
+									}//end of env
+								};	
+					
+					GGG = GGG.response;
+					GGG = {re:GGG, 
+					wa :  WebAssembly.instantiate(new Uint8Array(GGG),importy)
+					};//////////
+					GGG.wa.then((e)=>{GGG.la=e;
+							GGG.ex = e.instance.exports;
+								});
+					
+					};
+
+				GGG.open("GET","codes/codes.wasm",);
+				GGG.responseType="arraybuffer";
+				GGG.send();
+				})();
+				(async()=>{
+
+				document.getElementById('reschet').addEventListener('click',
+
+				(e)=>{
+					e.stopPropagation();
+					if(flg) return;
+					flg = true;
+					(async()=>{
+
+						GGG.ex.do_work();
+
+								})().then(()=>{flg=false;});
+					
+							}
+
+							);
+				
+				})();
+				
 				}
 		</script>
 	</head>
@@ -111,12 +392,12 @@
 				</td>
 				<td colspan='8'>
 					<div class="digiting">
-						 Двоичная система
+						Двоичная система(left to right)
 					</div>
 				</td>
 				<td>
 					<div class="deci_digit">
-						Десятичная система
+						Десятичная система(right to left)
 					</div>
 				</td>
 			</tr>
@@ -291,9 +572,40 @@
 			</tr>
 		</table>
 		<br/>
-		
+		<div id="reschet">
+				calculate
+		</div>
 		<br/>
 		<hr/>
-		
+		<h1>Output:</h1>
+		<br/>
+		<hr/>
+		<br/>
+		<table class="output_table">
+			<tr>
+				<td>
+					<div id="osumm">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="odiff">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="oneg">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="oinv">
+					</div>
+				</td>
+			</tr>
+		</table>
 	</body>
 </html>
