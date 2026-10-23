@@ -218,16 +218,29 @@
 				document.getElementById('oa1').innerText=(S%d);
 				S = S/d;
 				document.getElementById('oa2').innerText=(S%d);
-
+				d = 15n;
+				let p=document.getElementsByClassName('digit');
+				while(true)
+					{
+					if(p[d].innerText==1n)
+							GGG.ex.setB1();
+							
+					else
+							GGG.ex.setB0();
+					if(d==0n) break;
+					d=d-1n;
+					
+					}
 				
 				},
 			inputB:()=>{
 				let mn=1n, S=0n,d=10n;
 				let q = document.getElementsByClassName('digit')[8n];
+				let p=document.getElementsByClassName('digit');
 				while(q!=null)
 					{
 					if(q.innerText==1n){
-							GGG.ex.setB1();
+							//GGG.ex.setB1();
 							S = S + mn;
 								}
 					else
@@ -240,7 +253,16 @@
 				document.getElementById('ob1').innerText=(S%d);
 				S = S/d;
 				document.getElementById('ob2').innerText=(S%d);
-				
+				d = 15n;
+				while(d>7n)
+					{
+					if(p[d].innerText==1n)
+							GGG.ex.setB1();
+							
+					else
+							GGG.ex.setB0();
+					d=d-1n;
+					}
 				},
 			prepair:()=>
 			{
