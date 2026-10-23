@@ -218,13 +218,12 @@
 				document.getElementById('oa1').innerText=(S%d);
 				S = S/d;
 				document.getElementById('oa2').innerText=(S%d);
-				
+
 				
 				},
 			inputB:()=>{
 				let mn=1n, S=0n,d=10n;
 				let q = document.getElementsByClassName('digit')[8n];
-				let p=document.getElementsByClassName('digit');
 				while(q!=null)
 					{
 					if(q.innerText==1n){
@@ -251,8 +250,8 @@
 			},
 			output1:()=>{spisok.l = [1n]+spisok.l; },
 			output0:()=>{spisok.l = [0n]+spisok.l;},
-			//output1:()=>{spisok.l = spisok.l.push(1n);},
-			//output0:()=>{spisok.l = spisok.l.push(0n);},
+			//output1:()=>{ spisok.l.push(1n);},
+			//output0:()=>{spisok.l.push(0n);},
 			set_summ:()=>
 				{
 				let na = 'osumm';
