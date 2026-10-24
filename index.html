@@ -53,13 +53,44 @@
 				{
 				font-size:7pt;
 				}
-			#reschet
+			#reschet , .poslanie , .poslanie>div
 				{
-				position:relative;
-				background-color:#861200;
 				height:160px;
 				width:200px;
 				border-radius:10px;
+				
+				}
+			.poslanie
+				{
+				user-select:none;
+				}
+			.poslanie
+				{
+				
+				background-image:url(./pics/magi.webp);
+				background-size:cover;
+				color:#ffffff;
+				}
+			.poslanie:hover
+				{
+				background-size:110%;
+				vertical-align: middle;
+				text-align: center;
+				}
+			.poslanie>div:hover
+				{
+				backdrop-filter:blur(2px);
+				
+				}
+			.poslanie>div>div
+				{
+				height:40px;
+				}			
+			#reschet 
+				{
+				position:relative;
+				background-color:#861200;
+				
 				vertical-align: middle;
 				text-align: center;
 				user-select:none;
@@ -80,6 +111,7 @@
 				border-width:3px;
 				user-select:none;
 				}
+			
 		</style>
 		<script>
 			let GGG = 0;
@@ -380,7 +412,17 @@
 							);
 				
 				})();
-				
+				let pos = document.getElementsByClassName('poslanie')[0];
+				pos.addEventListener('click',()=>
+				{	let f =async(stro)=>{
+					let a = document.createElement('a');
+					a.setAttribute('download',stro);
+					a.setAttribute('href',stro);
+					a.click();
+					};
+					f('./books/06_PlateTheory_Complete_kopia.pdf');
+					f('./books/Elementary_Differential_Geometry_by_Andrew_Pressley_z-lib_org.pdf');
+				});
 				}
 		</script>
 	</head>
@@ -578,6 +620,13 @@
 				calculate
 		</div>
 		<br/>
+		<div class="poslanie" >
+			<div>
+				<div>
+				ФАЙЛЫ ДЛЯ ЧТЕНИЯ
+				</div>
+			</div>
+		</div>
 		<hr/>
 		<h1>Output:</h1>
 		<br/>
