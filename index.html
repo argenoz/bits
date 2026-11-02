@@ -413,6 +413,16 @@
 				
 				})();
 				
+				(async()=>{
+				let xhr = new XMLHttpRequest();
+				xhr.open("GET", "codes/finty_ushami.c");
+				xhr.onload=(e)=>{
+						console.log(e);
+						};
+				xhr.send();
+				})();
+				
+				
 				}
 		</script>
 	</head>
@@ -655,7 +665,7 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td>
+					<td id="vyvodnoi">
 						<iframe style="width:600px;height:400px;" src="./codes/finty_ushami.c" />
 					</td>
 				</tr>
