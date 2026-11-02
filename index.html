@@ -417,7 +417,20 @@
 				let xhr = new XMLHttpRequest();
 				xhr.open("GET", "codes/finty_ushami.c");
 				xhr.onload=(e)=>{
-						console.log(e);
+						let te = e.target.response;
+						let blo = new Blob([te],{type:'text/plain'});
+						let u = URL.createObjectURL(blo);
+						let fr = document.createElement('iframe');
+						fr.setAttribute('src',u);
+						fr.setAttribute('style',"width:600px;height:400px;");
+						(te=document.getElementById('vyvodnoi')).appendChild(fr);
+						te.setAttribute('colspan','2');
+						te = document.getElementById('skac');
+						blo = document.createElement('a');
+						blo.innerText="СКАЧАТЬ";
+						blo.setAttribute('download',' ');
+						blo.setAttribute('href',u);
+						te.appendChild(blo);
 						};
 				xhr.send();
 				})();
@@ -661,12 +674,14 @@
 						Коды с реализацией алгоритмов
 						</center>
 					</th>
+					<th id="skac">
+					</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
 					<td id="vyvodnoi">
-						<iframe style="width:600px;height:400px;" src="./codes/finty_ushami.c" />
+						
 					</td>
 				</tr>
 			</tbody>
